@@ -1,7 +1,7 @@
 .WebContent{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
+  grid-column-gap: 25px;
 }
 
 .ContImg{
@@ -9,11 +9,26 @@
   width: 100%;
   height: 100%;
   align-self: center;
-
 }
 
 .ContTxt{
   padding: 20px;
   align-self: top;
   padding-left: 20px;
+}
+
+.SectionHeading{
+  padding: 25px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  background-color: #c5c5c5
+}
+
+.SectionHeadingAlt{
+  padding: 25px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  background-color: #757575;
 }
