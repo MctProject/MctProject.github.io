@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/Spacer.css">
+</head>
+
+  <header id="navbar">
+
+    <div class="GridLayout">
+
+      <div class="PageTitle">
+        <a href="index.html"><h2 id="TitlePage">Mct Projects</h2></a>
+
+      </div>
+
+      <div id="MenuList">
+       <a href="index.html">Home</a>
+       <a href="releases.html">Releases</a>
+       <a href="indevelopment.html">InDevelopment</a>
+      </div>
+
+      <div class="UserActions">
+
+      </div>
+
+    </div>
+
+    <!-- Java script for header scrolling -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+      }
+    </script>
+    <!-- End Of Script -->
+  </header>
+  <div class="Spacer"></div>
+</html>
