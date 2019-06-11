@@ -1,11 +1,10 @@
 .WebContent{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*padding: 50px;*/
+  grid-gap: 25px;
 }
 
 .ContImg{
-  padding: 20px;
   object-fit: contain;
   width: 100%;
   height: 100%;
