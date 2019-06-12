@@ -32,3 +32,10 @@
 
   background-color: #757575;
 }
+
+.BannerImage{
+  position:  static;
+  object-fit: cover;
+  width: 100%;
+  height: 750px;
+}
