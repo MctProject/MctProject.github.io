@@ -1,0 +1,50 @@
+.ProCont{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+}
+
+.Btn{
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.ProTitle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: center;
+    align-items: center;
+}
+
+.ProImg{
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.ProLayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px 1fr;
+    text-align: center;
+    align-items: center;
+    
+    background: #999999;
+    width: 75%;
+    border-radius: 25px;
+
+    padding: 25px;
+}
+
+.ProLayoutCol{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    padding: 10px;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
