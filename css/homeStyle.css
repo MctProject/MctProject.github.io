@@ -1,6 +1,8 @@
 body{
     align-content: center;    
-    background: #dddddd;
+    background: #111111;
+
+    color: #fff;
 }
 
 .HomeBanner{
@@ -9,104 +11,62 @@ body{
 
 .Content{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    justify-items: center;
+    justify-items: center;  
+    text-align: center;
+}
+
+.HomeTitles{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .AboutMe{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    width: 75%;
+}
+
+.LineBreak{
+    width: 75%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    height: 1px;
+    margin: 5px;
+    background: #fff;
+}
+
+.Contents {
+    position: relative;
     text-align: center;
-    align-items: center;
+    color: white;    
+}
 
+.Overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px;
-    margin: 10px;
+
+    z-index: 2;
+    background-color: rgba(1,1,1,0.75);
+    width: 100%;
+    height: 100%;
     
-    background: #999999;
-    width: 50%;
-    border-radius: 25px;
-}
-
-.BestProjects{
-    display: grid;
-    grid-gap: 25px;
-    height: 500px;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    justify-items: center;
-}
-
-.ReadBtn{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.ReadMore{
-    text-decoration: none;
-    color: #ffffff;
-    background: #333333;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 5px;  
-    
-    font-size: 25px;
-}
-
-.ReadMore:hover{
-    background: #05b8ff;
-    color: #000000;
-}
-
-.Desc{
-    padding: 10px;
-}
-
-.Project{
-    background: #757575;
-    width: 450px;
     text-align: center;
-    text-decoration: none;
-    color: #000000;
-    align-items: center;
-    border-radius: 25px;
-
-    display: grid;
-    grid-template-rows: 1fr 1fr 50px;
 }
 
-.GridSpacer2{
-    display: none;
-}
-.GridSpacer3{
-    display: none;
-}
-
-.Spacer{
-    display: none;
-}
-
-@media only screen and (max-width: 1907px){
-    .BestProjects{        
-        grid-template-columns: 2fr 2fr 2fr;        
-    }
-    .Spacer{
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 1450px){
-    .BestProjects{        
-        grid-template-columns: 2fr 2fr;
-    }
-    .Spacer{
-        display: none;
-    }
+.ProImage{
+    width: 100%;
 }
 
 @media only screen and (max-width: 925px){
     .BestProjects{        
-        grid-template-columns: 2fr;
-    }
-    .Spacer{
-        display: none;
+        grid-template-columns: 1fr;
     }
 }
 
