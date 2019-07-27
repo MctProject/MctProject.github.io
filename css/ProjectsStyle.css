@@ -37,6 +37,10 @@ body{
     width: 75%;
 }
 
+.ProDesc{
+    padding: 10px;
+}
+
 .AboutMe{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -50,7 +54,7 @@ body{
     grid-column-end: 3;
 
     height: 1px;
-    margin: 5px;
+    margin: 20px;
     background: #fff;
 }
 
