@@ -48,6 +48,11 @@ body{
     width: 75%;
 }
 
+.ProVertGrid{
+    display: grid;
+    grid-template-rows: 1fr 75px;
+}
+
 .LineBreak{
     width: 75%;
     grid-column-start: 1;
